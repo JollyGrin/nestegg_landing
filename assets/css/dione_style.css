@@ -44,6 +44,39 @@
 
 
 
+/*------------------------------------*\
+    Parallax
+\*------------------------------------*/
+
+
+.parallax { 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+
 
 
 /*------------------------------------*\
@@ -196,8 +229,8 @@
 \*------------------------------------*/
 
 #venue {
-    background-image: url("../images/bg-venue.jpg");
-    background-position: center bottom !important;
+    background-image: url("../images/DASHBOARD.png");
+    background-position: top !important;
 }
 
 
@@ -515,7 +548,7 @@
     padding-bottom: 50px;
 }
 .footer-logo img {
-    width: 120px;
+    width: 4em;
 }
 .footer-social {
     padding-bottom: 20px;
