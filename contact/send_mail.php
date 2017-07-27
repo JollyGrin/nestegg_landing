@@ -8,7 +8,7 @@ define('SMTP_PASSWORD', 'calculator1'); // Password for SMTP authentication
 //define('SMTP_PORT', 25); // Port of the SMTP like to be 25, 80, 465 or 587
 
 // To address who will receive this email 
-$to = 'contact@blockchainedu.org';
+$to = 'info@nestegg.eu';
 
 $security = new Security();
 
@@ -21,8 +21,8 @@ if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message']
     $message = $security->xss_clean($_POST['message']);
     
     // Prefedined Variables  
-    $set_from = 'Bitcoin Airdrop Notification Mailer';
-    $subject = 'Bitcoin Airdrop: Message from ' . $name . '!';
+    $set_from = 'NestEgg Notification Mailer';
+    $subject = 'NestEgg: Message from ' . $name . '!';
 
     // Collecting all content in HTML Table
     $content = '<table width="100%">
