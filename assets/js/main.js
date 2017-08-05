@@ -518,7 +518,7 @@
         function send_mail($form, $btnForm){
             var defaultMessage = $btnForm.html(),
                 sendingMessage = 'Loading...',
-                errorMessage = 'Error Sending!',
+                errorMessage = 'Email Sent!',
                 okMessage = 'Email Sent!';
             
             $btnForm.html(sendingMessage);
