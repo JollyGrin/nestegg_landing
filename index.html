@@ -59,36 +59,36 @@
     <script src="assets/js/modernizr.min.js"></script>
     <![endif]-->
 
-<script type="text/javascript">
-    function showNL() {
-  var enElements = document.getElementsByClassName("en"),
-    i;
-  for (i = 0; i < enElements.length; i += 1) {
-    enElements[i].style.display = "none";
-  };
+<!-- <script type="text/javascript">
+//     function showNL() {
+//   var enElements = document.getElementsByClassName("en"),
+//     i;
+//   for (i = 0; i < enElements.length; i += 1) {
+//     enElements[i].style.display = "none";
+//   };
 
-  var nlElements = document.getElementsByClassName("nl"),
-    i;
-  for (i = 0; i < nlElements.length; i += 1) {
-    nlElements[i].style.display = "inherit";
-  };
-}
+//   var nlElements = document.getElementsByClassName("nl"),
+//     i;
+//   for (i = 0; i < nlElements.length; i += 1) {
+//     nlElements[i].style.display = "inherit";
+//   };
+// }
 
-function showEN() {
-  var nlElements = document.getElementsByClassName("nl"),
-    i;
-  for (i = 0; i < nlElements.length; i += 1) {
-    nlElements[i].style.display = "none";
-  };
+// function showEN() {
+//   var nlElements = document.getElementsByClassName("nl"),
+//     i;
+//   for (i = 0; i < nlElements.length; i += 1) {
+//     nlElements[i].style.display = "none";
+//   };
 
-  var enElements = document.getElementsByClassName("en"),
-    i;
-  for (i = 0; i < enElements.length; i += 1) {
-    enElements[i].style.display = "inherit";
-  };
-}
+//   var enElements = document.getElementsByClassName("en"),
+//     i;
+//   for (i = 0; i < enElements.length; i += 1) {
+//     enElements[i].style.display = "inherit";
+//   };
+// }
 </script>
-
+ -->
 
 
 </head>
@@ -853,11 +853,11 @@ function showEN() {
                 <div class="col-md-10 col-md-offset-1">
                     <span class="bg-gray-light-2 margin-7 no-margin-bottom no-margin-rl separator-line-full"></span>
                     
-                    <form action="contact/send_mail.php" method="post" id="form-contact" class="margin-8 no-margin-bottom no-margin-rl">
+                    <form action="https://formspree.io/info@nestegg.eu" method="POST" id="form-contact" class="margin-8 no-margin-bottom no-margin-rl">
                         <div class="row">
                             <div class="col-md-6" data-mh="mh-col-contact">
                                 <input type="text" placeholder="Your Name" name="name" class="required">
-                                <input type="text" placeholder="Your Email" name="email" class="required email">
+                                <input type="email" placeholder="Your Email" name="_replyto" class="required email">
                             </div>
                             <!-- //.col-md-6 -->
                             
@@ -875,7 +875,7 @@ function showEN() {
                             <!-- //.col-md-6 -->
                             
                             <div class="col-md-6">
-                                <button id="btn-form-contact" type="submit" class="btn btn-base-color btn-medium">Send Message</button>
+                                <button id="btn-form-contact" type="submit" value="Send" class="btn btn-base-color btn-medium">Send Message</button>
                             </div>
                             <!-- //.col-md-6 -->
                         </div>
@@ -961,6 +961,8 @@ function showEN() {
     
     <!-- Loading Theme JS -->
     <script src="assets/js/main.js"></script>
-    
+
+    <!-- Loading Lang Switcher -->
+    <script src="assets/js/lang.js"></script>
 </body>
 </html>

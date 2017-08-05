@@ -1,5 +1,4 @@
 /* global ScrollMagic, Linear */
-
 (function($){
     "use strict";
     

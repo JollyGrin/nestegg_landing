@@ -2,10 +2,10 @@
 require 'PHPMailer/PHPMailerAutoload.php';
 require 'PHPMailer/extras/Security.php';
 
-define('SMTP_HOST', 'localhost'); // Hostname of the mail server
-define('SMTP_USERNAME', 'michael.l.gord@gmail.com'); // Username for SMTP authentication any valid email created in your domain
-define('SMTP_PASSWORD', 'calculator1'); // Password for SMTP authentication
-//define('SMTP_PORT', 25); // Port of the SMTP like to be 25, 80, 465 or 587
+define('SMTP_HOST', 'smtp.gmail.com'); // Hostname of the mail server
+define('SMTP_USERNAME', 'noreply@nestegg.eu'); // Username for SMTP authentication any valid email created in your domain
+define('SMTP_PASSWORD', 'P>7q2yu%'); // Password for SMTP authentication
+define('SMTP_PORT', 465); // Port of the SMTP like to be 25, 80, 465 or 587
 
 // To address who will receive this email 
 $to = 'info@nestegg.eu';
@@ -38,7 +38,7 @@ if (isset($_POST['name']) AND isset($_POST['email']) AND isset($_POST['message']
     $mail->SMTPDebug = 0;
     $mail->Debugoutput = 'html';
     $mail->Host = SMTP_HOST;
-    //$mail->Port = SMTP_PORT;
+    $mail->Port = SMTP_PORT;
     //$mail->SMTPSecure = 'tls';
     $mail->SMTPAutoTLS = false;
     $mail->SMTPAuth = TRUE;
