@@ -387,7 +387,7 @@
                     quality: 'medium',
                     opacity: 1,
                     loop: true,
-                    startAt: 0
+                    startAt: 5
                 });
             }
             else{
